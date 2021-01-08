@@ -2,8 +2,54 @@
 <html>
     <head>
         <title>Yang Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <!-- Cover -->
+        <style>
+            body, html
+            {
+                /* set height */
+                height: 100%;
+                margin: 0;
+            }
+
+            .cover
+            {
+                /* The image used */
+                background-image: url("images/cover.png");
+                /* Full height */
+                height: 100%; 
+
+                /* Center and scale the image nicely */
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .cover-content-row
+            {
+                display: flex;
+                height: 50%;
+            }
+            .cover-content-column
+            {
+                padding-left: 5%;
+                padding-right: 55%;
+                padding-top: 20%;
+            }
+
+        </style>
     </head>
     <body>
-        
+        <!-- Cover -->
+        <div class="cover">
+            <div class="cover-content-row">
+                <div class="cover-content-column">
+                    <h1>
+                        <strong style="font-size: 50px; color: aliceblue;">"Don't follow your dream follow me on instagram"</strong>    
+                    </h1>
+                    <p style="font-size: 20px; color: aliceblue;;">Yang - Robotics and AI engineering student</p>
+                </div>
+            </div>
+        </div>
+        <p>test</p>
     </body>
 </html>
