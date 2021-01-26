@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Yang Web Page!</title>
+        <title>Your Friendly Neighborhood Yang</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <!-- Cover -->
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
             body, html
             {
                 /* set height */
@@ -14,26 +17,63 @@
 
             .cover
             {
+                display: flex;
                 /* The image used */
                 background-image: url("images/cover.jpg");
                 /* Full height */
                 height: 100%; 
-
+                width: 100%;
                 /* Center and scale the image nicely */
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            .cover-content-row
+            .cover-flex-align
             {
                 display: flex;
-                height: 50%;
-            }
-            .cover-content-column
-            {
+                overflow: hidden;
                 padding-left: 5%;
-                padding-right: 55%;
-                padding-top: 20%;
+                padding-top: 10%;
+            }
+            .cover-content
+            {
+                padding-top: 15%;
+                width: 60%;
+            }
+            .about
+            {
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                height: 700px;
+                overflow: hidden;
+                background-color: #000000;
+            }
+            .about-flex-align
+            {
+                display: flex;
+                overflow: auto;
+                padding-left: 12%;
+                padding-right: 12%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+            h2.remove-whitespace
+            {
+                margin: 0;
+                padding: 0;
+            }
+            h2
+            {
+                font-family: 'Playfair Display', serif;
+            }
+            .about-column-1-content
+            {
+                width: 25%;
+            }
+            .about-column-2-content
+            { 
+                width: 70%;
             }
 
         </style>
@@ -41,15 +81,40 @@
     <body>
         <!-- Cover -->
         <div class="cover">
-            <div class="cover-content-row">
-                <div class="cover-content-column">
-                    <h1>
-                        <strong style="font-size: 50px; color: aliceblue;">"Don't follow your dream follow me on instagram"</strong>    
-                    </h1>
-                    <p style="font-size: 20px; color: aliceblue;;">Yang - Robotics and AI engineering student</p>
+            <div class="cover-flex-align">
+                <div class="cover-content">
+                    <h1 style="font-size: 50px; color: #f9f9f9; font-family: 'Playfair Display', serif;">"Don't follow your dream follow me on instagram"</h1>
+                    <p style="font-size: 20px; color: #f9f9f9; font-family: 'Raleway', sans-serif;">Yang - Robotics and AI engineering student</p>
+                </div> 
+            </div>
+        </div>
+        <div class="about">
+            <div class="about-flex-align">
+                <div class="about-column-1-content">
+                    <span style="font-weight: bolder; font-size:25px; color: #ffff00; font-family: 'Raleway', sans-serif;">Who Am I</span>
+                </div>
+                <div class="about-column-2-content">
+                    <h2 class="remove-whitespace" style="font-size:35px; color: #ffff00; ">Petchtechin Petchsiripan, an engineering student mojoring in Robotics and AI.</h2>
+                    <span style="font-size:20px; color: #f9f9f9; font-family: 'Raleway', sans-serif;">
+                        <br>
+                        To tell you a bit more about myself, I am an ambitious, rational, and independent thinker person. I am also a learning addict. 
+                        I was motivated by Alphago, Boston Dynamics, Amazon Go, and Tesla. They made me started learning to code after high school graduation. 
+                        I want to be an AI specialist with a high leadership skill to launch new crazy innovations. I want to be a part of people who make the world to be a better place.
+                        <br>
+                        <br>
+                        I have experienced many AI hands-on projects using Python and PyTorch. I have been one of 100 selected people from 2000 people
+                        to compete in the largest AI competition Thailand. Moreover, I have experienced a lot of start-up competitions, where sharpen my skills in both technology and business development.
+                        <br>
+                        <br>
+                        Besides AI, I also have motivation in finance, business, and investment since I was in grade 11. I am used to spending time reading investment and business stuff.
+                        I love to analyse things. Even in my free time, I usually play board games with friends. I like to talk to new people because that makes me understand a new point of view and be able to learn from other experiences.
+                        <br>
+                        <br>
+
+                    </span>
                 </div>
             </div>
         </div>
-        <p>กำลังทำอยู่ ไว้แวะมาดูใหม่นะ</p>
+        <p>Coming Soon. It's under construction...</p>
     </body>
 </html>
