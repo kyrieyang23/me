@@ -5,23 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <!-- Cover -->
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800;900&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-            @media only screen and (max-width: 800px)
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+            @media only screen and (max-width: 1000px) 
             {
                 #about-text 
                 {
-                    font-size:2vw !important; 
+                    font-size:17px !important; 
                 }
                 #about-head
                 {
-                    font-size:3vw !important; 
+                    font-size:35px !important; 
                 }
                 #who
                 {
-                    font-size:2.2vw !important; 
-                    padding-right:0; 
+                    font-size: 15px !important; 
+                    padding-right:0 !important; 
+                }
+                .about-column-1-content
+                {
+                padding-top: 5% !important;
+                width: 100% !important;
                 }
                 .about-column-2-content
                 { 
@@ -29,11 +34,42 @@
                 }
                 .cover-content
                 {
-                    padding-top: 10% !important;
+                    padding-top: 12% !important;
                 }
                 #cover-text
                 {   
                     font-size: 48px !important;
+                }
+                #edu-head
+                {
+                    font-size: 8vw !important;
+                }
+                .cover-content
+                {
+                    padding-top: 12% !important;
+                    width: 50% !important;
+                }
+                .edu-column-1
+                {
+                    width: 100% !important;
+                    padding-left: 15% !important;
+                    padding-right: 15% !important;
+                }
+                .edu-column-2
+                {
+                    width: 70% !important;
+                }
+                #edu-text-head
+                {
+                    font-size: 22px !important;
+                }
+                #edu-text-date
+                {
+                    font-size: 15px !important;
+                }
+                li
+                {
+                    font-size: 15px !important;
                 }
             }
             body, html
@@ -68,7 +104,7 @@
             }
             .cover-content
             {
-                padding-top: 15%;
+                padding-top: 17%;
                 width: 60%;
             }
             .about
@@ -94,13 +130,18 @@
                 margin: 0;
                 padding: 0;
             }
+            p.remove-whitespace
+            {
+                margin: 0;
+                padding: 0;
+            }
             h2
             {
                 font-family: 'Playfair Display', serif;
             }
             .about-column-1-content
             {
-                padding-top: 7px;
+                padding-top: 0.8vw;
                 width: 25%;
             }
             .about-column-2-content
@@ -109,13 +150,14 @@
             }
             #about-text
             {
-                font-size:1vw; 
+                font-size:1.3vw; 
                 color: #f9f9f9; 
                 font-family: 'Raleway', sans-serif;
             }
             #about-head
             {
-                font-size:2vw; 
+                font-weight: 700;
+                font-size:2.5vw; 
                 color: #ffeebc; 
             }
             #cover-text
@@ -132,7 +174,74 @@
                 color: #ffeebc; 
                 font-family: 'Raleway', sans-serif;
             }
-
+            .edu-head-box
+            {
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                overflow: hidden;
+            }
+            .middle-align
+            {
+                padding-top: 3%;
+                padding-bottom: 3%;
+                margin: auto;
+                width: 50%;
+            }
+            #edu-head
+            {
+                font-family: 'Playfair Display', serif; 
+                color: black; 
+                font-weight: 700;
+                text-align: center; 
+                font-size: 65px;
+            }
+            .edu
+            {
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                overflow: hidden;
+            }
+            .edu-column-1
+            {
+                padding-right: 5%;
+                width: 45%;
+            }
+            .edu-column-2
+            {
+                margin: auto;
+                width: 40%;
+            }
+            img 
+            {
+                width: 100%;
+            }
+            #drop-shadow
+            {
+                filter: drop-shadow(2px 2px 5px #e0e0e0);
+            }
+            #edu-text-head
+            {
+                font-size: 2.5vw;
+                font-family: 'Playfair Display', serif; 
+                color: black; 
+            }
+            #edu-text-date
+            {
+                font-size: 1.7vw;
+                font-weight: 500;
+            }
+            li
+            {
+                font-size: 1.3vw;
+                font-family: 'Raleway', sans-serif;
+            }
+            #number
+            {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 300;
+            }
         </style>
     </head>
     <body>
@@ -141,7 +250,6 @@
             <div class="cover-flex-align">
                 <div class="cover-content">
                     <h1 id="cover-text">"Don't follow your dream follow me on instagram"</h1>
-                    <p style="font-size: 20px; color: #f9f9f9; font-family: 'Raleway', sans-serif;">Yang - Robotics and AI engineering student</p>
                 </div> 
             </div>
         </div>
@@ -151,7 +259,7 @@
                     <span id="who">Who Am I</span>
                 </div>
                 <div class="about-column-2-content">
-                    <h2 id="about-head" class="remove-whitespace" >Petchtechin Petchsiripan, an engineering student mojoring in Robotics and AI.</h2>
+                    <h2 id="about-head" class="remove-whitespace" >Petchtechin Petchsiripan (Yang)</h2>
                     <span id="about-text">
                         <br>
                         To tell you a bit more about myself, I am an ambitious, rational, and independent thinker person. I am also a learning addict. 
@@ -170,6 +278,27 @@
 
                     </span>
                 </div>
+            </div>
+        </div>
+        <div class="edu-head-box">
+            <div class="middle-align">
+                <h1 id="edu-head">Education</h1>
+            </div>
+        </div>
+        <div class="edu">
+            <div class="edu-column-1">
+                <div class="edu-column-1-content">
+                    <img id="drop-shadow" src="images/kmitl.png">
+                </div>
+            </div>
+            <div class="edu-column-2">
+                <h2 class="remove-whitespace" id="edu-text-head">King Mongkut's Institute Of Technology Ladkrabang </h2>
+                <span id="edu-text-date">Expected Graduation Date - Nov 2022</span>
+                <p>
+                    <li>Bachelor of Engineering (B.Eng.), Majoring in Robotics and AI</li> 
+                    <li>Cumulative GPA: <span id="number">3.56</span> Hons</li> 
+    
+                </p>
             </div>
         </div>
         <p>Coming Soon. It's under construction...</p>
