@@ -40,7 +40,7 @@
                 {   
                     font-size: 48px !important;
                 }
-                #edu-head
+                #head
                 {
                     font-size: 8vw !important;
                 }
@@ -59,11 +59,19 @@
                 {
                     width: 70% !important;
                 }
-                #edu-text-head
+                #text-head
+                {
+                    font-size: 20px !important;
+                }
+                #text-head-edu
                 {
                     font-size: 22px !important;
                 }
-                #edu-text-date
+                #text-sub
+                {
+                    font-size: 18px !important;
+                }
+                #text-subsub
                 {
                     font-size: 15px !important;
                 }
@@ -71,13 +79,39 @@
                 {
                     font-size: 15px !important;
                 }
+                .ex-column-1
+                {
+                    height: 280px !important;
+                    padding-right: 10%;
+                    width: 80% !important;
+                    padding-top: 5%;
+                }
+                .ex-column-2
+                {
+                    height: 280px !important;
+                    width: 80% !important;
+                    padding-right: 10% !important;
+                    padding-left: 10% !important;
+                }
+                .ex-column-3
+                {
+                    height: 280px !important;
+                    width: 80% !important;
+                    padding-right: 10% !important;
+                    padding-left: 10% !important;
+                }
+                #ex-pic
+                {
+                    height: 150px !important;
+                }
+
             }
             body, html
             {
                 /* set height */
                 height: 100%;
                 margin: 0;
-                background-color: #f3f3f3;
+                background-color: #ffff;
             }
 
             .cover
@@ -120,8 +154,8 @@
                 display: flex;
                 flex-flow: row wrap;
                 overflow: auto;
-                padding-left: 12%;
-                padding-right: 12%;
+                padding-left: 10%;
+                padding-right: 10%;
                 padding-top: 3%;
                 padding-bottom: 3%;
             }
@@ -174,7 +208,7 @@
                 color: #ffeebc; 
                 font-family: 'Raleway', sans-serif;
             }
-            .edu-head-box
+            .head-box
             {
                 display: flex;
                 flex-flow: row wrap;
@@ -188,7 +222,7 @@
                 margin: auto;
                 width: 50%;
             }
-            #edu-head
+            #head
             {
                 font-family: 'Playfair Display', serif; 
                 color: black; 
@@ -202,6 +236,8 @@
                 flex-flow: row wrap;
                 width: 100%;
                 overflow: hidden;
+                background-color: #f3f3f3;
+                padding-bottom: 5%;
             }
             .edu-column-1
             {
@@ -216,20 +252,21 @@
             img 
             {
                 width: 100%;
+                object-fit: scale-down;
             }
             #drop-shadow
             {
                 filter: drop-shadow(2px 2px 5px #e0e0e0);
             }
-            #edu-text-head
+            #text-head
             {
                 font-size: 2.5vw;
                 font-family: 'Playfair Display', serif; 
                 color: black; 
             }
-            #edu-text-date
+            #text-sub
             {
-                font-size: 1.7vw;
+                font-size: 1.5vw;
                 font-weight: 500;
             }
             li
@@ -241,6 +278,66 @@
             {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 300;
+            }
+            #edu-box
+            {
+                background-color: #f3f3f3;
+            }
+            .ex
+            {
+                display: flex;
+                flex-flow: row wrap;
+                width: 100%;
+                overflow: hidden;
+            }
+            .ex-column-1
+            {
+                text-align: center;
+                padding-left: 10%;
+                margin-top: auto;
+                margin-bottom: auto;
+                width: 25%;
+                height: 20vw;
+            }
+            #text-subsub
+            {
+                font-size: 1.3vw;
+                font-weight: 500;
+                color: #333333;
+            }
+            .ex-column-2
+            {
+                text-align: center;
+                width: 25%;
+                margin-top: auto;
+                margin-bottom: auto;
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+                height: 20vw;
+            }
+            .ex-column-3
+            {
+                text-align: center;
+                width: 25%;
+                margin-top: auto;
+                margin-bottom: auto;
+                height: 20vw;
+            }
+            #ex-pic
+            {  
+                width: 70%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                padding-bottom: 2vw;
+                height: 10vw;
+            }
+            #text-head-edu
+            {
+                font-size: 2.2vw; 
+                color: black;
+                font-weight: 600;
+                font-family: 'Roboto', sans-serif;
             }
         </style>
     </head>
@@ -280,25 +377,50 @@
                 </div>
             </div>
         </div>
-        <div class="edu-head-box">
+        <div id="edu-box" class="head-box">
             <div class="middle-align">
-                <h1 id="edu-head">Education</h1>
+                <h1 id="head">Education</h1>
             </div>
         </div>
         <div class="edu">
             <div class="edu-column-1">
-                <div class="edu-column-1-content">
+                <div>
                     <img id="drop-shadow" src="images/kmitl.png">
                 </div>
             </div>
             <div class="edu-column-2">
-                <h2 class="remove-whitespace" id="edu-text-head">King Mongkut's Institute Of Technology Ladkrabang </h2>
+                <h2 class="remove-whitespace" id="text-head">King Mongkut's Institute Of Technology Ladkrabang </h2>
                 <span id="edu-text-date">Expected Graduation Date - Nov 2022</span>
                 <p>
                     <li>Bachelor of Engineering (B.Eng.), Majoring in Robotics and AI</li> 
                     <li>Cumulative GPA: <span id="number">3.56</span> Hons</li> 
-    
                 </p>
+            </div>
+        </div>
+        <img src="images/bc.png">
+        <div class="head-box">
+            <div class="middle-align" >
+                <h1 id="head">Experiences</h1>
+            </div>
+        </div>
+        <div class="ex">
+            <div class="ex-column-1">
+                <img id="ex-pic" src="images/atime.png">
+                <h2 class="remove-whitespace" id="text-head-edu">Actor(Atime Media)</h2>
+                <span id="text-sub">GMM Media Public Co. Ltd.</span>
+                <span id="text-subsub"><br>Oct 2020 - present</span>
+            </div>
+            <div class="ex-column-2">
+                <img id="ex-pic" src="images/wizard.png">
+                <h2 class="remove-whitespace" id="text-head-edu">Co-Founder & CEO</h2>
+                <span id="text-sub">Wizard Library</span>
+                <span id="text-subsub"><br>May 2020 - Present</span>
+            </div>
+            <div class="ex-column-3">
+                <img id="ex-pic" src="images/kmitlex.png">
+                <h2 class="remove-whitespace" id="text-head-edu">Teaching Assistant</h2>
+                <span id="text-sub">King Mongkut's Institute Of Technology Ladkrabang</span>
+                <span id="text-subsub"><br>Aug 2019 - Nov 2019</span>
             </div>
         </div>
         <p>Coming Soon. It's under construction...</p>
